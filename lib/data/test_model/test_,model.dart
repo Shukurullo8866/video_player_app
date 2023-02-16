@@ -1,10 +1,7 @@
-class Utils{
-
-
+class Utils {
   String baseUrl = "https://kun.uz";
 
   int myNumber = 100;
-
 
   bool isMaxNew(int amount, int maxAmount, double rate, bool isDollar) {
     if (isDollar) {
@@ -14,16 +11,14 @@ class Utils{
     }
   }
 
-
-
   bool stringEquals(String main, String sub) {
     if (main.replaceAll(" ", "").length < sub.replaceAll(" ", "").length) {
       return false;
     } else {
       if ((main
-          .replaceAll(" ", "")
-          .substring(0, sub.replaceAll(" ", "").length)
-          .toUpperCase()) ==
+              .replaceAll(" ", "")
+              .substring(0, sub.replaceAll(" ", "").length)
+              .toUpperCase()) ==
           sub.replaceAll(" ", "").toUpperCase()) {
         return true;
       } else {
@@ -32,7 +27,6 @@ class Utils{
     }
   }
 
-
   static String format(int k) {
     if (k < 10) {
       return "0$k";
@@ -40,8 +34,6 @@ class Utils{
       return k.toString();
     }
   }
-
-
 
   String returnCardFormatText(String cardNumber) {
     String part1 = cardNumber.substring(0, 2);
